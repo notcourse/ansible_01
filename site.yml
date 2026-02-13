@@ -1,0 +1,7 @@
+---
+- name: Try to say hello
+  hosts: all
+  tasks:
+    - name: Say hello
+      debug:
+        msg: Hello, {{ who_am_i }}!
